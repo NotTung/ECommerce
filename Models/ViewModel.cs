@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using ECommerce.Models;
 
 public class RegisterViewModel
 {
@@ -27,3 +28,9 @@ public class LoginViewModel
 
     public bool RememberMe { get; set; }
 }
+public class ViewModelTrangChu
+{
+    public List<Product> Products { get; set; }
+    public List<Category> Categories { get; set; }
+}
+

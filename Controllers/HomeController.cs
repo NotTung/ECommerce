@@ -18,7 +18,16 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         var products = _context.Products.ToList();
-        return View(products);
+        var categories = _context.Categories.ToList();
+
+        // ko thể hiển thị các model riêng lẻ, mà chỉ có thể hiển thị nhiều loại dưới dạng viewModel
+        var viewModelTrangChu = new ViewModelTrangChu
+        {
+            Products = products,
+            Categories = categories
+        };
+
+        return View(viewModelTrangChu);
     }
 
     public IActionResult Privacy()
