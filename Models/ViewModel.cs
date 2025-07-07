@@ -1,36 +1,38 @@
 using System.ComponentModel.DataAnnotations;
 using ECommerce.Models;
 
-public class RegisterViewModel
+namespace ECommerce.ViewModel
 {
-    [Required]
-    [EmailAddress]
-    public string Email { get; set; }
+    public class RegisterViewModel
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
 
-    [Required]
-    [DataType(DataType.Password)]
-    public string Password { get; set; }
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
 
-    [DataType(DataType.Password)]
-    [Compare("Password")]
-    public string ConfirmPassword { get; set; }
+        [DataType(DataType.Password)]
+        [Compare("Password")]
+        public string ConfirmPassword { get; set; }
+    }
+
+    public class LoginViewModel
+    {
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        public string Password { get; set; }
+
+        public bool RememberMe { get; set; }
+    }
+    public class ViewModelTrangChu
+    {
+        public List<Product> Products { get; set; }
+        public List<Category> Categories { get; set; }
+    }
 }
-
-public class LoginViewModel
-{
-    [Required]
-    [EmailAddress]
-    public string Email { get; set; }
-
-    [Required]
-    [DataType(DataType.Password)]
-    public string Password { get; set; }
-
-    public bool RememberMe { get; set; }
-}
-public class ViewModelTrangChu
-{
-    public List<Product> Products { get; set; }
-    public List<Category> Categories { get; set; }
-}
-

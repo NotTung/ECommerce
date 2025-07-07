@@ -2,6 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using ECommerce.Models;
 using ECommerce.Data;
+using ECommerce.ViewModel;
 
 namespace ECommerce.Controllers;
 

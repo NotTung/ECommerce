@@ -33,6 +33,9 @@ if (!app.Environment.IsDevelopment())
 //     SeedData.Initialize(services, userManager).Wait();
 // }
 
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

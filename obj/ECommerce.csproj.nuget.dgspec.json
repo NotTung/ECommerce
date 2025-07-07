@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\dev\\ECommerce\\ECommerce.csproj": {}
+    "D:\\dev\\ECommerce\\ECommerce.csproj": {}
   },
   "projects": {
-    "d:\\dev\\ECommerce\\ECommerce.csproj": {
+    "D:\\dev\\ECommerce\\ECommerce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\dev\\ECommerce\\ECommerce.csproj",
+        "projectUniqueName": "D:\\dev\\ECommerce\\ECommerce.csproj",
         "projectName": "ECommerce",
-        "projectPath": "d:\\dev\\ECommerce\\ECommerce.csproj",
+        "projectPath": "D:\\dev\\ECommerce\\ECommerce.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "d:\\dev\\ECommerce\\obj\\",
+        "outputPath": "D:\\dev\\ECommerce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -63,7 +63,7 @@
             },
             "MySql.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.33, )"
+              "version": "[8.0.5, )"
             }
           },
           "imports": [
